@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<!--
+    Analyn Pureza
+    CPSC 24700 LT1
+    Map Mania Lite v1
+    Description: This application is intended to be a starting point for Map Mania. 
+-->    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Mania Lite</title>
+    <link rel="stylesheet" href="map-mania-lite.css">
+    <script src="map-mania-lite.js"></script>
+    <style>
+        /*
+            Always set the map height explicitly to define the size of the div element that contains
+            the map. Note that some of the tutorials reused "map" here aslo which seemed confusing.
+        */
+    #myMapID {
+        height: 100%;
+        width: 100%;
+    }
+
+    /*  Optional: Makes the sample page fill the window. */
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+<body onload="initApplication()">
+    <h1>Map Mania Lite v1.4</h1>
+
+    <div id="myMapID"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApxLPHLxUA7ZXaAUyOigzpre_uZcD02ZM&callback=initMap&v=weekly" async defer></script>
+    
+</body>
+</html>
